@@ -1,0 +1,13 @@
+sudo fdisk -l
+dd if=kali linux.iso of=/dev/nameofthedrive bs=512k
+apt-get update
+docker pull kalilinux/kali-linux-docker
+run -t -i kalilinux/kal-linux-docker /bin/bash
+ssh -i privatekey.pem ec2-user@amazon-dns-ip
+passwd root
+adduser 
+apt-get install preload
+apt-get install bleachbit
+apt-get install bum
+./packer.exe build .\Windows_2008_r2.json
+vagrant up
