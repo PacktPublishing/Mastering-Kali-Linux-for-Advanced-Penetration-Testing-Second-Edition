@@ -34,6 +34,3 @@ Finally, this book applies Kali to complete the attacker's kill chain against ta
 * [Kali Linux Network Scanning Cookbook - Second Edition](https://www.packtpub.com/networking-and-servers/kali-linux-network-scanning-cookbook-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781787287907)
 
 * [Kali Linux Intrusion and Exploitation Cookbook](https://www.packtpub.com/networking-and-servers/kali-linux-intrusion-and-exploitation-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781783982165)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
