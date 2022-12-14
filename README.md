@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781787120235)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Mastering Kali Linux for Advanced Penetration Testing - Second Edition
 This is the code repository for [Mastering Kali Linux for Advanced Penetration Testing - Second Edition](https://www.packtpub.com/networking-and-servers/mastering-kali-linux-advanced-penetration-testing-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781787120235), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
